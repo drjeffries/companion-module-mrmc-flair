@@ -1,0 +1,28 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "mrmc-flair",
+	"name": "mrmc-flair",
+	"shortname": "flair",
+	"description": "Controls Flair motion control software over its OSC input: run/stop/goto/shoot, browse, camera-axis jogging, HHB speed, triggers, part-run sections, axis engage/disengage, carts mode and line editing, with ready-made presets for every command.",
+	"version": "0.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/drjeffries/companion-module-mrmc-flair.git",
+	"bugs": "https://github.com/drjeffries/companion-module-mrmc-flair/issues",
+	"maintainers": [
+		{
+			"name": "David Jeffries",
+			"email": "david.r.jeffries@gmail.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Multidyne Motion Control",
+	"products": ["Flair"],
+	"keywords": ["motion control", "robot", "camera", "osc", "multidyne", "flair", "vfx"]
+}
